@@ -11,10 +11,25 @@
 
 
 const LicensePlatesColorValid = function(bgColor,textColor){
-    if(bgColor==="blue"&&textColor==="white")return true;
-    if(bgColor==="red"&&textColor==="black")return true;
-    if(bgColor==="yellow"&&textColor==="red")return true;
-    if(bgColor==="yellow"&&textColor==="black")return true;
+    if(bgColor==="blue"){
+        if(textColor==="white"){
+            return true;
+        }else{
+            return false;
+        }
+    }else if(bgColor==="white"){
+        if(textColor==="black"){
+            return true;
+        }else{
+            return false;
+        }
+    }else if(bgColor==="yellow"){
+        if(textColor==="red"||textColor==="black"){
+            return true;
+        }else{
+            return false;
+        }
+    }
     return false;
 }
 
