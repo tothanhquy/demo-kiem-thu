@@ -3,7 +3,7 @@ import Layout from "./layout.js";
 import Home from "./home.js";
 import Register from "./register.js";
 import PersonTax from "./person-tax.js";
-import ArmyDuty from "./army-duty.js";
+import AllowMarry from "./allow-marry.js";
 import CitizenIdentificationCard from "./citizen-identification-card.js";
 import DrivingLicense from "./driving-license.js";
 
@@ -16,7 +16,7 @@ export default function App() {
           <Route path="home" element={<Home />} />
           <Route path="register" element={<Register />} />
           <Route path="person-tax" element={<PersonTax />} />
-          <Route path="army-duty" element={<ArmyDuty />} />
+          <Route path="allow-marry" element={<AllowMarry />} />
           <Route path="citizen-identification-card" element={<CitizenIdentificationCard />} />
           <Route path="driving-license" element={<DrivingLicense />} />
           {/* <Route path="contact" element={<Contact />} />

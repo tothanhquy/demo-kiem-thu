@@ -19,19 +19,13 @@ function Register() {
 
   const emailFormatGuide = `
   Sai định dạng email
-  <p>Một địa chỉ email hợp lệ phải có định dạng như sau:</p>
-  <ul>
-    <li>Phần tên người dùng, chứa các ký tự không gian, ký tự chữ cái hoặc số.</li>
-    <li>Dấu @.</li>
-    <li>Phần tên miền, chứa tên miền cơ bản (ví dụ: gmail, yahoo, hotmail) và tên miền cụ thể (ví dụ: com, org, net).</li>
-    <li>Dấu chấm giữa tên miền cơ bản và tên miền cụ thể.</li>
-  </ul>
-  <p>Ví dụ về một địa chỉ email hợp lệ: <strong>example@example.com</strong></p>
+  Địa chỉ email được phép chứa các ký tự chữ cái, số, dấu gạch dưới () và dấu gạch ngang (-) trong phần tên trước dấu @. Phần tên miền sau dấu @ phải bắt đầu và kết thúc bằng ký tự chữ cái hoặc số, có thể chứa dấu gạch dưới () hoặc dấu gạch ngang (-), và có từ 2 đến 4 ký tự.
+  Ví dụ về một địa chỉ email hợp lệ: example@example.com
 `;
 
   function validateEmail(email) {
     // Biểu thức chính quy để kiểm tra định dạng email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     // Kiểm tra xem địa chỉ email có khớp với biểu thức chính quy không
     return emailRegex.test(email);
   }

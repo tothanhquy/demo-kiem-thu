@@ -40,7 +40,7 @@ function AlignmentExample() {
           <Nav.Link href="/person-tax">Thuế cá nhân</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/army-duty">Xét tạm hoãn nghĩa vụ quân sự</Nav.Link>
+          <Nav.Link href="/allow-marry">Điều kiện kết hôn</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/citizen-identification-card">Phân tích căn cước công dân</Nav.Link>
